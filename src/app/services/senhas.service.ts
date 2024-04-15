@@ -72,6 +72,7 @@ export class SenhasService {
         '-' +
         tipoSenha +
         (this.senhasArray['SP'].length + 1).toString().padStart(2, '0');
+        console.log(this.inputNovaSenha);
       this.senhasArray.SP.push(this.inputNovaSenha);
     } else {
       this.somaExame();
@@ -82,6 +83,7 @@ export class SenhasService {
         '-' +
         tipoSenha +
         (this.senhasArray['SE'].length + 1).toString().padStart(2, '0');
+        console.log(this.inputNovaSenha);
       this.senhasArray.SE.push(this.inputNovaSenha);
     }
     console.log(this.senhasArray);
